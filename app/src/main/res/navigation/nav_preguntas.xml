@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_preguntas"
+    app:startDestination="@id/pregunta1Fragment">
+
+    <fragment
+        android:id="@+id/pregunta1Fragment"
+        android:name="com.example.quiztime.preguntas.Pregunta1Fragment"
+        android:label="fragment_pregunta1"
+        tools:layout="@layout/fragment_pregunta1" >
+        <action
+            android:id="@+id/action_pregunta1Fragment_to_pregunta2Fragment"
+            app:destination="@id/pregunta2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta2Fragment"
+        android:name="com.example.quiztime.preguntas.Pregunta2Fragment"
+        android:label="fragment_pregunta2"
+        tools:layout="@layout/fragment_pregunta2" >
+        <action
+            android:id="@+id/action_pregunta2Fragment_to_pregunta3Fragment"
+            app:destination="@id/pregunta3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta3Fragment"
+        android:name="com.example.quiztime.preguntas.Pregunta3Fragment"
+        android:label="fragment_pregunta3"
+        tools:layout="@layout/fragment_pregunta3" >
+        <action
+            android:id="@+id/action_pregunta3Fragment_to_pregunta4Fragment"
+            app:destination="@id/pregunta4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta4Fragment"
+        android:name="com.example.quiztime.preguntas.Pregunta4Fragment"
+        android:label="fragment_pregunta4"
+        tools:layout="@layout/fragment_pregunta4" >
+        <action
+            android:id="@+id/action_pregunta4Fragment_to_pregunta5Fragment"
+            app:destination="@id/pregunta5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta5Fragment"
+        android:name="com.example.quiztime.preguntas.Pregunta5Fragment"
+        android:label="fragment_pregunta5"
+        tools:layout="@layout/fragment_pregunta5" />
+</navigation>

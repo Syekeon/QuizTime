@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck_app"
+    tools:context=".ResultadoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_resultados"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/color_puntuacion"
+        app:cardBackgroundColor="@color/color_puntuacion"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_resultados">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_fallos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/puntuacion_pordefecto"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_fallos"
+                app:layout_constraintStart_toEndOf="@+id/image_fallos"
+                app:layout_constraintTop_toTopOf="@+id/image_fallos" />
+
+            <ImageView
+                android:id="@+id/image_fallos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/descripcion_imagenes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_aciertos"
+                app:srcCompat="@raw/fail_icon" />
+
+            <TextView
+                android:id="@+id/text_aciertos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/puntuacion_pordefecto"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_aciertos"
+                app:layout_constraintStart_toEndOf="@+id/image_aciertos"
+                app:layout_constraintTop_toTopOf="@+id/image_aciertos" />
+
+            <ImageView
+                android:id="@+id/image_aciertos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/descripcion_imagenes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_preguntas"
+                app:srcCompat="@raw/success_icon" />
+
+            <TextView
+                android:id="@+id/text_preguntas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/puntuacion_pordefecto"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_preguntas"
+                app:layout_constraintStart_toEndOf="@+id/image_preguntas"
+                app:layout_constraintTop_toTopOf="@+id/image_preguntas" />
+
+            <ImageView
+                android:id="@+id/image_preguntas"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:contentDescription="@string/descripcion_imagenes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_resultados"
+                app:srcCompat="@raw/question_icon" />
+
+            <ImageView
+                android:id="@+id/image_resultados"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/descripcion_imagenes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@raw/result_icon" />
+
+            <ImageView
+                android:id="@+id/image_puntuacion"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="170dp"
+                android:contentDescription="@string/descripcion_imagenes"
+                app:layout_constraintBottom_toBottomOf="@+id/image_aciertos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_aciertos"
+                app:srcCompat="@raw/score_icon" />
+
+            <TextView
+                android:id="@+id/text_puntuacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/puntuacion_pordefecto"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_puntuacion"
+                app:layout_constraintStart_toEndOf="@+id/image_puntuacion"
+                app:layout_constraintTop_toTopOf="@+id/image_puntuacion" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_resultados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bck_puntuacion"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/puntuacion"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_otravez"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_general"
+        android:onClick="volverQuiz"
+        android:padding="15dp"
+        android:text="@string/btn_otravez"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview_resultados" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_general"
+        android:onClick="volverMenu"
+        android:padding="15dp"
+        android:text="@string/btn_salir"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview_resultados" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

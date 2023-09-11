@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck_app"
+    tools:context=".preguntas.Pregunta5Fragment">
+
+    <ImageView
+        android:id="@+id/image_num5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/descripcion_imagenes"
+        android:src="@raw/question_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_num5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/pregunta5_num"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/image_num5"
+        app:layout_constraintEnd_toStartOf="@+id/image_num5"
+        app:layout_constraintTop_toTopOf="@+id/image_num5" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_pregunta5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/purple_700"
+        app:cardBackgroundColor="@color/purple_700"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_num5">
+
+        <TextView
+            android:id="@+id/text_prg5_enunciado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="@string/pregunta5_enunciado"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview_pregunta5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_prg5_opcion1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="210dp"
+            android:background="@drawable/btn_opcion"
+            android:text="@string/pregunta5_opcion1"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_prg5_opcion1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/descripcion_imagenes"
+            android:src="@raw/pr5_op1_image"
+            app:layout_constraintEnd_toEndOf="@+id/button_prg5_opcion1"
+            app:layout_constraintStart_toStartOf="@+id/button_prg5_opcion1"
+            app:layout_constraintTop_toBottomOf="@+id/button_prg5_opcion1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_prg5_opcion2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_opcion"
+            android:text="@string/pregunta5_opcion2"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_prg5_opcion1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_prg5_opcion1"
+            app:layout_constraintTop_toTopOf="@+id/button_prg5_opcion1" />
+
+        <ImageView
+            android:id="@+id/image_prg5_opcion2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/descripcion_imagenes"
+            android:src="@raw/pr5_op2_image"
+            app:layout_constraintEnd_toEndOf="@+id/button_prg5_opcion2"
+            app:layout_constraintStart_toStartOf="@+id/button_prg5_opcion2"
+            app:layout_constraintTop_toBottomOf="@+id/button_prg5_opcion2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_prg5_opcion3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="210dp"
+            android:background="@drawable/btn_opcion"
+            android:text="@string/pregunta5_opcion3"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_prg5_opcion1" />
+
+        <ImageView
+            android:id="@+id/image_prg5_opcion3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@string/descripcion_imagenes"
+            android:src="@raw/pr5_op3_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button_prg5_opcion3"
+            app:layout_constraintStart_toStartOf="@+id/button_prg5_opcion3"
+            app:layout_constraintTop_toBottomOf="@+id/button_prg5_opcion3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_prg5_opcion4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_opcion"
+            android:text="@string/pregunta5_opcion4"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_prg5_opcion3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_prg5_opcion3"
+            app:layout_constraintTop_toTopOf="@+id/button_prg5_opcion3" />
+
+        <ImageView
+            android:id="@+id/image_prg5_opcion4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@string/descripcion_imagenes"
+            android:src="@raw/pr5_op4_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button_prg5_opcion4"
+            app:layout_constraintStart_toStartOf="@+id/button_prg5_opcion4"
+            app:layout_constraintTop_toBottomOf="@+id/button_prg5_opcion4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_volverempezar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_general"
+        android:padding="15dp"
+        android:text="@string/btn_volverempezar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_deshabilitado"
+        android:enabled="false"
+        android:padding="15dp"
+        android:text="@string/btn_siguiente"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
